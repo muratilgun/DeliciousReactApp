@@ -17,11 +17,12 @@ function Cuisine() {
   };
   useEffect(() => {
     getCuisine(params.type);
-    // console.log(params.type);
+    console.log(params.type);
   }, [params.type]);
   return (
     <Grid>
       {cuisine.map((item) => {
+        console.log(item.title);
         return (
           <Card key={item.id}>
             <img src={item.image} alt="" />
@@ -49,7 +50,6 @@ const Card = styled.div`
   h4 {
     text-align: center;
     padding: 1rem;
-
   }
 `;
 export default Cuisine;
