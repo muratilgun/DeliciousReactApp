@@ -1,13 +1,14 @@
 import Veggie from '../components/Veggie';
 import Popular from '../components/Popular';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function Home() {
   return (
-    <div>
+    <motion.div>
       <Veggie />
       <Popular />
-    </div>
+    </motion.div>
   );
 }
 
